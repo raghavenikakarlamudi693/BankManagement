@@ -44,6 +44,7 @@ It’s designed primarily for **learning and showcasing OOP concepts** in a clea
 com.java.bank
 └── Main.java → Entry point for the application
 
+
 com.java.model
 ├── Account.java → Abstract base class
 ├── SavingsAccount.java → Derived class with interest feature
@@ -55,3 +56,88 @@ com.java.service
 
 com.java.util
 └── InputHelper.java → Utility class for user input
+
+
+---
+
+## ⚙️ How to Run
+
+### ▶️ Using Eclipse or IntelliJ
+1. Open the project in your IDE.
+2. Make sure your JDK version is **Java 17+ (preferably Java 21)**.
+3. Right-click on `Main.java` → **Run As → Java Application**.
+4. View output in the console.
+
+### ▶️ Using Command Line
+cd src
+javac com/java/bank/Main.java
+java com.java.bank.Main
+
+🧠 Classes Overview
+🏦 Account (Abstract Class)
+
+Common fields: account number, holder name, balance
+
+Abstract method: withdraw()
+
+Concrete method: deposit()
+
+💰 SavingsAccount
+
+Inherits from Account
+
+Adds addInterest() method
+
+💼 CurrentAccount
+
+Inherits from Account
+
+Supports overdraft limit
+
+🧾 BankService
+
+Manages all accounts
+
+Methods: addAccount(), findAccount(), showAllAccounts()
+
+🔁 TransactionService
+
+Handles fund transfers between accounts
+
+⌨️ InputHelper
+
+Simplifies user input using Scanner
+(optional, used in interactive versions)
+
+Sample Output
+
+✅ Account created for Raghaveni
+✅ Account created for Priya
+Deposited: ₹2000.0
+Withdrawn: ₹1500.0
+Interest added: ₹420.0
+✅ ₹3000.0 transferred from Raghaveni to Priya
+
+🔹 All Accounts Info:
+---------------------
+Account No: A101
+Holder Name: Raghaveni
+Balance: ₹9920.0
+---------------------
+Account No: A102
+Holder Name: Priya
+Balance: ₹8000.0
+
+📘 Future Enhancements
+
+🔹 Add console-based menu for interactive input
+🔹 Store accounts in files or database
+🔹 Add login system for customers
+🔹 Add transaction history tracking
+
+👩‍💻 Author
+
+Raghaveni Kakarlamudi
+📧 raghavenikakarlamudi693@gmil.com
+🌐 https://github.com/raghavenikakarlamudi693
+

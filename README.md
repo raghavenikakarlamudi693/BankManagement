@@ -35,8 +35,7 @@ It’s designed primarily for **learning and showcasing OOP concepts** in a clea
 | **Encapsulation** | Hiding internal details using private fields and getters/setters | Private fields in `Account` |
 | **Abstraction** | Abstract class for common structure | `Account` class with abstract `withdraw()` |
 | **Inheritance** | Reusing behavior across related classes | `SavingsAccount` and `CurrentAccount` extend `Account` |
-| **Polymorphism** | Different implementations for the same method | `withdraw()` behaves differently in each subclass |
-| **Composition** | Combining objects for functionality | `BankService` uses multiple `Account` objects |
+| **Polymorphism** | Different implementations for the same method | `withdraw()` behaves differently in each subclasses
 
 ---
 
@@ -73,7 +72,9 @@ cd src
 javac com/java/bank/Main.java
 java com.java.bank.Main
 
+
 🧠 Classes Overview
+
 🏦 Account (Abstract Class)
 
 Common fields: account number, holder name, balance
@@ -82,11 +83,13 @@ Abstract method: withdraw()
 
 Concrete method: deposit()
 
+
 💰 SavingsAccount
 
 Inherits from Account
 
 Adds addInterest() method
+
 
 💼 CurrentAccount
 
@@ -94,20 +97,24 @@ Inherits from Account
 
 Supports overdraft limit
 
+
 🧾 BankService
 
 Manages all accounts
 
 Methods: addAccount(), findAccount(), showAllAccounts()
 
+
 🔁 TransactionService
 
 Handles fund transfers between accounts
+
 
 ⌨️ InputHelper
 
 Simplifies user input using Scanner
 (optional, used in interactive versions)
+
 
 Sample Output
 
@@ -127,6 +134,7 @@ Balance: ₹9920.0
 Account No: A102
 Holder Name: Priya
 Balance: ₹8000.0
+
 
 📘 Future Enhancements
 

@@ -115,7 +115,7 @@ Handles fund transfers between accounts
 ⌨️ InputHelper
 
 Simplifies user input using Scanner
-(optional, used in interactive versions)
+
 
 
 Sample Output
@@ -129,10 +129,11 @@ Interest added: ₹420.0
 
 🔹 All Accounts Info:
 ---------------------
+
 Account No: A101
 Holder Name: Raghaveni
 Balance: ₹9920.0
----------------------
+
 Account No: A102
 Holder Name: Priya
 Balance: ₹8000.0

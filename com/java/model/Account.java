@@ -28,7 +28,7 @@ public abstract class Account {
 	public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("Deposited: " + amount);
+            System.out.println("Amount is deposited: " + amount);
         } else {
             System.out.println("Invalid deposit amount!");
         }
@@ -37,6 +37,7 @@ public abstract class Account {
     //Abstract method — implemented differently by subclasses
 	
     public abstract void withdraw(double amount);
+    
 
     public void displayInfo() {
         System.out.println("Account No: " + accountNumber);

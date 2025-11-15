@@ -69,7 +69,9 @@ com.java.util
 
 ### ▶️ Using Command Line
 cd src
+
 javac com/java/bank/Main.java
+
 java com.java.bank.Main
 
 
